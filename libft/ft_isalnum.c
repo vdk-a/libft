@@ -1,30 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/15 13:57:14 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/07/28 08:01:04 by codespace        ###   ########.fr       */
+/*   Created: 2025/07/28 06:02:11 by codespace         #+#    #+#             */
+/*   Updated: 2025/07/28 06:23:06 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <unistd.h>
-# include <stdlib.h>
-
-size_t	ft_strlen(const char *s);
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-void	ft_bzero(void *b, size_t len);
-void	*ft_memset(void *b, int c, size_t len);
-void	*ft_memcpy(void *dest, const void *src, size_t len);
-int		ft_isalnum(int c);
-int 	ft_isascii(int c);
-int		ft_isprint(int c);
-int 	ft_toupper(int c);
-
-#endif
+int ft_isalnum(int c)
+{
+    if ((c >= 'A' && c <= 'Z')
+        || (c >= 'a' && c <= 'z')
+        || (c >= '0' && c <= '9'))
+        return (1);
+    return (0);
+}

@@ -1,30 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/15 13:57:14 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/07/28 08:01:04 by codespace        ###   ########.fr       */
+/*   Created: 2025/07/28 08:02:34 by codespace         #+#    #+#             */
+/*   Updated: 2025/07/29 05:11:20 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include <stdio.h>
+#include "libft.h"
 
-# include <unistd.h>
-# include <stdlib.h>
+int ft_tolower(int c)
+{
+    if (c >= 'A' && c <= 'Z')
+    {
+        c = c + 32;
+        return (c);
+    }
+    return (c);
+}
 
-size_t	ft_strlen(const char *s);
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-void	ft_bzero(void *b, size_t len);
-void	*ft_memset(void *b, int c, size_t len);
-void	*ft_memcpy(void *dest, const void *src, size_t len);
-int		ft_isalnum(int c);
-int 	ft_isascii(int c);
-int		ft_isprint(int c);
-int 	ft_toupper(int c);
-
-#endif
+// int main(void)
+// {
+//     char c;
+//     char result;
+    
+//     c = 'K';
+//     result = ft_tolower(c);
+//     printf("%c\n", result);
+//     return (0);
+// }
