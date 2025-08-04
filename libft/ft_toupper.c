@@ -6,18 +6,18 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 07:28:02 by codespace         #+#    #+#             */
-/*   Updated: 2025/07/28 08:00:13 by codespace        ###   ########.fr       */
+/*   Updated: 2025/08/04 11:48:14 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-    if (c >= 'a' && c <= 'z')
-    {
-        c = c - 32;
-        return (c);
-    }
-    return (c);
+	if (c >= 'a' && c <= 'z')
+	{
+		c = c - 32;
+		return (c);
+	}
+	return (c);
 }

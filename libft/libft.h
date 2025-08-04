@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 13:57:14 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/04 05:06:32 by codespace        ###   ########.fr       */
+/*   Updated: 2025/08/04 11:43:58 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,19 +16,20 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-size_t  	 ft_strlen(const char *s);
-int	    	 ft_isalpha(int c);
-int		     ft_isdigit(int c);
-void    	 ft_bzero(void *b, size_t len);
-void	     *ft_memset(void *b, int c, size_t len);
-void	     *ft_memcpy(void *dest, const void *src, size_t len);
-int		     ft_isalnum(int c);
-int 	     ft_isascii(int c);
-int		     ft_isprint(int c);
-int 	     ft_toupper(int c);
-int          ft_tolower(int c);
-unsigned int ft_strlcpy(char *dest, const char *src, size_t len);
-int          ft_atoi(char *str);
-void	     *ft_memmove(void *dest, const void *src, size_t len);
+size_t			ft_strlen(const char *s);
+int				ft_isalpha(int c);
+int				ft_isdigit(int c);
+void			ft_bzero(void *b, size_t len);
+void			*ft_memset(void *b, int c, size_t len);
+void			*ft_memcpy(void *dest, const void *src, size_t len);
+int				ft_isalnum(int c);
+int				ft_isascii(int c);
+int				ft_isprint(int c);
+int				ft_toupper(int c);
+int				ft_tolower(int c);
+unsigned int	ft_strlcpy(char *dest, const char *src, size_t len);
+int				ft_atoi(char *str);
+void			*ft_memmove(void *dest, const void *src, size_t len);
+char			*strchr(const char *s, int c);
 
 #endif
