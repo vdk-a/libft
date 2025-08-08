@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 13:57:14 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/06 08:07:39 by codespace        ###   ########.fr       */
+/*   Updated: 2025/08/08 05:28:54 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,7 @@ char			*strchr(const char *s, int c);
 unsigned int	ft_strlcat(char *dst, const char *src, size_t size);
 char			*ft_strrchr(const char *s, int c);
 void			*ft_memchr(const void *src, int ch, size_t n);
+char			*ft_strnstr(const char *haystack, const char *needle, size_t len);
+char			*ft_strdup(const char *s1);
 
 #endif

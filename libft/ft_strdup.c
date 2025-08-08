@@ -1,39 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/06 06:53:25 by codespace         #+#    #+#             */
-/*   Updated: 2025/08/06 08:08:07 by codespace        ###   ########.fr       */
+/*   Created: 2025/08/08 05:18:09 by codespace         #+#    #+#             */
+/*   Updated: 2025/08/08 05:25:01 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+#include <stdlib.h>
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+char	*ft_strdup(const char *s1)
 {
-	unsigned char	*str1;
-	unsigned char	*str2;
-	size_t			i;
+	size_t	i;
+	size_t	len;
+	char	*dup;
 
-	str1 = (unsigned char *)s1;
-	str2 = (unsigned char *)s2;
 	i = 0;
-	while (i < n)
+	len = ft_strlen(s1);
+	dup = (char *)malloc(len + 1);
+	if (!dup)
 	{
-		if (str1[i] != str2[i])
-			return (str1[i] - str2[i]);
+		return (NULL);
+	}
+	while (i < len)
+	{
+		dup[i] = s1[i];
 		i++;
 	}
-	return (0);
+	dup[i] = '\0';
+	return (dup);
 }
-
-//int	main(void)
-//{
-//	int	res;
-//	res = ft_memcmp("Khaled", "Khaxed", 6);
-//	printf("%d\n", res);
-//}
