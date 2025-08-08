@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: kal-hend <kal-hend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/15 13:57:14 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/08 05:28:54 by codespace        ###   ########.fr       */
+/*   Created: 2025/08/08 09:41:36 by kal-hend          #+#    #+#             */
+/*   Updated: 2025/08/08 11:05:53 by kal-hend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <limits.h>
 
 size_t			ft_strlen(const char *s);
 int				ft_isalpha(int c);
@@ -34,7 +35,10 @@ char			*strchr(const char *s, int c);
 unsigned int	ft_strlcat(char *dst, const char *src, size_t size);
 char			*ft_strrchr(const char *s, int c);
 void			*ft_memchr(const void *src, int ch, size_t n);
-char			*ft_strnstr(const char *haystack, const char *needle, size_t len);
+char			*ft_strnstr(const char *haystack,
+					const char *needle,
+					size_t len);
 char			*ft_strdup(const char *s1);
+void			*ft_calloc(size_t nmemb, size_t size);
 
 #endif
