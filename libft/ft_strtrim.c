@@ -6,7 +6,7 @@
 /*   By: kal-hend <kal-hend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 12:31:14 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/11 15:12:04 by kal-hend         ###   ########.fr       */
+/*   Updated: 2025/08/18 08:46:53 by kal-hend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 //int main(void)
 //{
 //	char	*res;
-//	res = ft_strtrim("--Hello-World--", "-");
+//	res = ft_strtrim("--Hello--World--", "-");
 //	printf("%s\n", res);
 //}

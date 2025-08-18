@@ -6,7 +6,7 @@
 /*   By: kal-hend <kal-hend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 10:24:33 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/13 16:00:17 by kal-hend         ###   ########.fr       */
+/*   Updated: 2025/08/14 14:43:54 by kal-hend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,25 +47,33 @@ char	*ft_itoa(int n)
 {
 	int		len;
 	char	*result;
-	int		sign;
+	long	num;
 
 	len = number_counter(n);
-	result = malloc(len + 1);
+	result = malloc((len + 1) * sizeof(char));
 	if (n == 0)
 	{
 		return (if_zero());
 	}
-	if (n < 0)
+	num = n;
+	if (num < 0)
 	{
-		sign = -1;
+		num = -num;
 		result[0] = '-';
 	}
-	while (n > 0)
-	{
-		result[len] = n % 10;
-		n = n / 10;
-		len --;
-	}
 	result[len] = '\0';
+	while (num > 0)
+	{
+		result[--len] = num % 10 + '0';
+		num = num / 10;
+	}
 	return (result);
 }
+
+//int	main(void)
+//{
+//	char	*res;
+//	res = ft_itoa(32);
+//	printf("%s\n", res);
+//	return (0);
+//}
