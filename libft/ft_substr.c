@@ -6,7 +6,7 @@
 /*   By: kal-hend <kal-hend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 10:06:00 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/11 12:04:38 by kal-hend         ###   ########.fr       */
+/*   Updated: 2025/08/20 13:42:58 by kal-hend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,10 +41,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ptr[i] = '\0';
 	return (ptr);
 }
-
-	//int main(void)
-	//{
-	//	char *res;
-	//	res = ft_substr("HelloWorld", 5, 12);
-	//	printf("%s\n", res);
-	//}

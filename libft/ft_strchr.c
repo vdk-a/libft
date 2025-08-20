@@ -6,7 +6,7 @@
 /*   By: kal-hend <kal-hend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 09:40:59 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/08 09:41:00 by kal-hend         ###   ########.fr       */
+/*   Updated: 2025/08/20 13:42:08 by kal-hend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,15 +28,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
-
-//int	main(void)
-//{
-//	const char	*s;
-//	char		*result;
-//	int			c;
-
-//	s = "khaled";
-//	c = 'l';
-//	result = ft_strchr(s, c);
-//	printf("%s\n", result);
-//}

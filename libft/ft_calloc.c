@@ -6,7 +6,7 @@
 /*   By: kal-hend <kal-hend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 09:40:20 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/08 10:14:38 by kal-hend         ###   ########.fr       */
+/*   Updated: 2025/08/20 13:39:34 by kal-hend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(ptr, total);
 	return (ptr);
 }
-
-// 15, 18, 22, 24

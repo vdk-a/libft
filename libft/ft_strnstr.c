@@ -6,7 +6,7 @@
 /*   By: kal-hend <kal-hend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 09:39:47 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/08 09:39:50 by kal-hend         ###   ########.fr       */
+/*   Updated: 2025/08/20 13:42:51 by kal-hend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-
-//int	main(void)
-//{
-//	char	*res;
-//	res = ft_strnstr("HelloWorld", "World", 20);
-//	printf("%s\n", res);
-//}

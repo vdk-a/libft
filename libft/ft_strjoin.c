@@ -6,7 +6,7 @@
 /*   By: kal-hend <kal-hend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 09:33:21 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/11 12:28:26 by kal-hend         ###   ########.fr       */
+/*   Updated: 2025/08/20 13:42:19 by kal-hend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ptr[i + j] = '\0';
 	return (ptr);
 }
-
-//int main()
-//{
-//	char *res;
-//	res = ft_strjoin("Hello", "World");
-//	printf("%s\n", res);
-//}

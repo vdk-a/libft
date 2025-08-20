@@ -6,7 +6,7 @@
 /*   By: kal-hend <kal-hend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 09:40:46 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/08 09:40:47 by kal-hend         ###   ########.fr       */
+/*   Updated: 2025/08/20 13:39:49 by kal-hend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,3 @@ void	*ft_memchr(const void *src, int ch, size_t n)
 	}
 	return (NULL);
 }
-
-//int	main(void)
-//{
-//	void	*res;
-//	res = ft_memchr("Khaledd", 'h', 7);
-//	printf("%c\n", *(char *)res);
-//	printf("%s\n", (char *)res);
-//}

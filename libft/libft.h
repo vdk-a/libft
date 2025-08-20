@@ -6,7 +6,7 @@
 /*   By: kal-hend <kal-hend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 09:41:36 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/18 09:48:49 by kal-hend         ###   ########.fr       */
+/*   Updated: 2025/08/20 13:46:36 by kal-hend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int				ft_tolower(int c);
 unsigned int	ft_strlcpy(char *dest, const char *src, size_t len);
 int				ft_atoi(char *str);
 void			*ft_memmove(void *dest, const void *src, size_t len);
-char			*strchr(const char *s, int c);
+char			*ft_strchr(const char *s, int c);
 unsigned int	ft_strlcat(char *dst, const char *src, size_t size);
 char			*ft_strrchr(const char *s, int c);
 void			*ft_memchr(const void *src, int ch, size_t n);
@@ -45,5 +45,14 @@ char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strjoin(char const *s1, char const *s2);
 char			*ft_strtrim(char const *s1, char const *set);
 char			**ft_split(char const *s, char c);
+char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void			ft_putstr_fd(char *s, int fd);
+void			ft_putchar_fd(char c, int fd);
+void			ft_striteri(char *s, void (*f)(unsigned int, char*));
+void			ft_putendl_fd(char *s, int fd);
+void			ft_putnbr_fd(int n, int fd);
+char			*ft_itoa(int n);
+int				ft_strncmp(char *s1, char *s2, unsigned int n);
+int				ft_memcmp(const void *s1, const void *s2, size_t n);
 
 #endif

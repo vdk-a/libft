@@ -6,7 +6,7 @@
 /*   By: kal-hend <kal-hend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 09:40:50 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/08 09:40:51 by kal-hend         ###   ########.fr       */
+/*   Updated: 2025/08/20 13:39:51 by kal-hend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-//int	main(void)
-//{
-//	int	res;
-//	res = ft_memcmp("Khaled", "Khaxed", 6);
-//	printf("%d\n", res);
-//}

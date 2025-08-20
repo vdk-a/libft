@@ -6,7 +6,7 @@
 /*   By: kal-hend <kal-hend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 09:40:10 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/08 09:40:11 by kal-hend         ###   ########.fr       */
+/*   Updated: 2025/08/20 13:39:25 by kal-hend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 int	ft_atoi(char *str)
 {
-	int	i;
-	int	result;
-	int	sign;
+	int				i;
+	long long		result;
+	int				sign;
 
 	i = 0;
 	result = 0;
@@ -35,13 +35,9 @@ int	ft_atoi(char *str)
 		result = result * 10 + (str[i] - '0');
 		i++;
 	}
+	if (result * sign > INT_MAX)
+		return (-1);
+	if (result * sign < INT_MIN)
+		return (0);
 	return (result * sign);
 }
-
-// int main(void)
-// {
-//     int nmbr;
-//     nmbr = ft_atoi("  -123abd");
-//     printf("%d\n", nmbr);
-//     return (0);
-// }

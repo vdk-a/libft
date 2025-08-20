@@ -6,7 +6,7 @@
 /*   By: kal-hend <kal-hend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 10:32:20 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/08 09:39:35 by kal-hend         ###   ########.fr       */
+/*   Updated: 2025/08/20 13:42:37 by kal-hend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,14 +33,3 @@ unsigned int	t_strlcpy(char *dest, const char *src, size_t len)
 		i++;
 	return (i);
 }
-// int main(void)
-// {
-//     char dest[20];
-//     const char *src;
-//     unsigned int end;
-
-//     src = "minecraft";
-//     end = ft_strlcpy(dest, src, 6);
-//     printf("Copied string: %s\n", dest);
-//     printf("%u\n", end);
-// }

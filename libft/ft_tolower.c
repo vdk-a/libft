@@ -6,7 +6,7 @@
 /*   By: kal-hend <kal-hend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 09:41:19 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/08 09:41:20 by kal-hend         ###   ########.fr       */
+/*   Updated: 2025/08/20 13:43:02 by kal-hend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,3 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
-
-// int main(void)
-// {
-//     char c;
-//     char result;
-//     c = 'K';
-//     result = ft_tolower(c);
-//     printf("%c\n", result);
-//     return (0);
-// }

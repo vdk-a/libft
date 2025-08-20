@@ -1,31 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kal-hend <kal-hend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/18 10:53:47 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/20 13:39:54 by kal-hend         ###   ########.fr       */
+/*   Created: 2025/08/20 12:24:17 by kal-hend          #+#    #+#             */
+/*   Updated: 2025/08/20 13:36:47 by kal-hend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t len)
+void	ft_putnbr_fd(int n, int fd)
 {
-	unsigned char		*d;
-	const unsigned char	*s;
-	size_t				i;
+	char	digit_char;
 
-	d = (unsigned char *) dest;
-	s = (const unsigned char *) src;
-	i = 0;
-	while (i < len)
+	if (n == INT_MIN)
 	{
-		d[i] = s[i];
-		i++;
+		write(fd, "-", 1);
+		write(fd, "2147483648", 10);
+		return ;
 	}
-	return (dest);
+	if (n < 0)
+	{
+		write(fd, "-", 1);
+		n = -n;
+	}
+	if (n >= 10)
+		ft_putnbr_fd(n / 10, fd);
+	digit_char = (n % 10) + '0';
+	write(fd, &digit_char, 1);
 }

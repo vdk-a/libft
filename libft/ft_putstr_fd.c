@@ -1,31 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kal-hend <kal-hend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/18 10:53:47 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/20 13:39:54 by kal-hend         ###   ########.fr       */
+/*   Created: 2025/08/20 11:37:48 by kal-hend          #+#    #+#             */
+/*   Updated: 2025/08/20 12:08:57 by kal-hend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t len)
+void	ft_putstr_fd(char *s, int fd)
 {
-	unsigned char		*d;
-	const unsigned char	*s;
-	size_t				i;
+	size_t	i;
 
-	d = (unsigned char *) dest;
-	s = (const unsigned char *) src;
+	if (!s)
+		return ;
 	i = 0;
-	while (i < len)
+	while (s[i])
 	{
-		d[i] = s[i];
+		write(fd, &s[i], 1);
 		i++;
 	}
-	return (dest);
 }
