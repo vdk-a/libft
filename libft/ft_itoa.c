@@ -6,7 +6,7 @@
 /*   By: kal-hend <kal-hend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 10:24:33 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/20 13:39:46 by kal-hend         ###   ########.fr       */
+/*   Updated: 2025/08/20 14:49:16 by kal-hend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*if_zero(void)
 {
 	char	*result;
 
-	result = malloc(2);
+	result = malloc(sizeof(char) * 2);
 	if (!result)
 		return (NULL);
 	result[0] = '0';
@@ -48,9 +48,11 @@ char	*ft_itoa(int n)
 	long	num;
 
 	len = number_counter(n);
-	result = malloc((len + 1) * sizeof(char));
 	if (n == 0)
 		return (if_zero());
+	result = malloc((len + 1) * sizeof(char));
+	if (!result)
+		return (NULL);
 	num = n;
 	if (num < 0)
 	{

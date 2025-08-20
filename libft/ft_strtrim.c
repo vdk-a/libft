@@ -6,7 +6,7 @@
 /*   By: kal-hend <kal-hend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 12:31:14 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/20 13:42:56 by kal-hend         ###   ########.fr       */
+/*   Updated: 2025/08/20 14:35:35 by kal-hend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,9 +63,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 	j = end(s1, set, len_s);
 	if (i > j)
 	{
-		return (NULL);
+		return (ft_strdup(""));
 	}
-	result = malloc((j - i) + 1);
+	result = malloc((j - i + 1) + 1);
 	if (!result)
 		return (NULL);
 	k = 0;

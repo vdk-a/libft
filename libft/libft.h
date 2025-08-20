@@ -6,7 +6,7 @@
 /*   By: kal-hend <kal-hend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 09:41:36 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/20 13:46:36 by kal-hend         ###   ########.fr       */
+/*   Updated: 2025/08/20 15:01:50 by kal-hend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int				ft_isprint(int c);
 int				ft_toupper(int c);
 int				ft_tolower(int c);
 unsigned int	ft_strlcpy(char *dest, const char *src, size_t len);
-int				ft_atoi(char *str);
+int				ft_atoi(const char *str);
 void			*ft_memmove(void *dest, const void *src, size_t len);
 char			*ft_strchr(const char *s, int c);
 unsigned int	ft_strlcat(char *dst, const char *src, size_t size);

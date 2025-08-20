@@ -6,7 +6,7 @@
 /*   By: kal-hend <kal-hend@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/18 10:53:47 by kal-hend          #+#    #+#             */
-/*   Updated: 2025/08/20 13:39:54 by kal-hend         ###   ########.fr       */
+/*   Updated: 2025/08/20 14:32:20 by kal-hend         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t len)
 	const unsigned char	*s;
 	size_t				i;
 
+	if (!dest && !src)
+		return (NULL);
 	d = (unsigned char *) dest;
 	s = (const unsigned char *) src;
 	i = 0;
